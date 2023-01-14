@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    border: solid black 1px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    
+}
+
+.child{
+    position: relative;
+    top: 150px;
+    left: 150px;
+    background-color: #FF00FF;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    animation-name: centerBounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes centerBounce {
+    from {left : 150px}
+    25% {left : 0px}
+    75% {left : 300px}
+    100% {left : 150px}
+  }

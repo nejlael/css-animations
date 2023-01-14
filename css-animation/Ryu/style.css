@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.ryu{
+    height: 240px;
+    width: 400px;
+    background-image: url(./images/ryu.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 0%;
+    animation-name: Sprite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(45);
+    
+}
+
+@keyframes Sprite {
+    from {background-position: 0 0%;}
+    to {background-position: 0 100%;}
+}
